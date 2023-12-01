@@ -66,7 +66,6 @@ fn part_two(filename: &str) {
                     if c.is_ascii_digit() {
                         digit = c.to_digit(radix).unwrap() as i32;
                     } else {
-                        // println!("i = {}, len = {}", i, line_as_vec.len());
                         if i + 2 < line_as_vec.len() {
                             digit = word_to_digit(
                                 line_as_vec[i..i + 3].iter().cloned().collect::<String>(),
